@@ -219,11 +219,16 @@ footer nav a{
 }
 
 @media screen and (min-width: 48rem){
-    header div{
+    header div {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+
+    header nav{
+        display: block;
+    }
+
     header img,
     header nav,
     header .button{
@@ -232,6 +237,45 @@ footer nav a{
 }
 
 @media screen and (min-width: 72rem){
-    .container
+    .container{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 72rem;
+    }
+    .container-row-reverse{
+        flex-direction: row-reverse;
+    }
+    .cards{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    .card{
+        width: 30rem;
+    }
+    footer{
+        text-align: center;
+    }
+    footer nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    footer form input[type="email"]{
+        width: 900px;
+    }
+    .button2{
+    border: 2px solid var(--color-black);
+    box-shadow: 4px 4px 0 var(--color-black);
+    color: var(--color-black);
+    font-size: 1.25rem;
+    padding: .75rem 1rem;
+    max-width: 14rem;
+    text-align: center;
+    margin: 20px 0 40px 0;
+    
+
+    }
 }
 
