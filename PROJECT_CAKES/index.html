@@ -1,175 +1,187 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delícias da Dika</title>
+    <title>Delícias da Dika Cakes</title>
+    <script src="./js/script.js" defer></script>
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <!-- Barra de Navegação -->
-    <div class="container">
-        <div class="navbar-container">
-            <nav>
-                <img src="./img/logo.gif" alt="logo" class="logo">
-                <ul class="nav-items">                          
-                    <li>
-                        <a href="#">Quem somos</a>
-                    </li>
-                    <li>
-                        <a href="#">Onde nos encontrar</a>
-                    </li>
-                    <li>
-                            <a href="#">Cardápio</a>
-                    </li>
-                    <li>
-                        <a href="#">Seja um franqueado</a>
-                    </li>
-                    <li>
-                        <a href="#">Peça pelo Ifood</a>
-                    </li>
-                </ul>
-            </nav>
+    <nav class="nav-container">
+        <div>
+            <img class="logo" src="./img/logo.png" alt="Delícias da DikaCakes">
         </div>
-        <main>
-            <!-- Seleção de sabores -->
-            <div class="main-banner">
-                <h1>Delícias da Dika</h1>
-                <p>O bolo, quando feito com amor, tem até mais sabor!</p>
-                <section class="flavors">
-                    <label for="flavor" class="flavor" #flavor-title>Conheça nossos recheios:</label>
-                    <select name="flavor" id="flavor">
-                        <option value=""></option>
-                        <option value="Abacaxi">Abacaxi</option>
-                        <option value="Amendoim">Amendoim</option>
-                        <option value="Castanha">Castanha</option>
-                        <option value="Chocolate">Chocolate</option>
-                        <option value="Côco">Côco</option>
-                        <option value="Cupuaçu">Cupuaçu</option>                    
-                        <option value="Doce de leite">Doce de leite</option>
-                        <option value="Leite ninho">Leite ninho</option>
-                        <option value="Maracujá">Maracujá</option>
-                        <option value="Oreo">Oreo</option>
-                        <option value="Sonho de valsa">Sonho de valsa</option>          
-                    </select>
-                </section>
-            </div>
-            <!-- FOTOS DE CLIENTES -->
-        <section class="pictures-container">
-            
-                <img src="./img/cake_yellowpink.jpeg" alt="Bolo de Aniversário Tardizinha">
-                <img src="./img/cake_green.jpeg" alt="Bolo de Aniversário Arca de Noel">
-                <img src="./img/cake_whitepink.jpeg" alt="Bolo de Aniversário Branco e Rosa">
-                <img src="./img/cake_yellow.jpeg" alt="Bolo de Aniversário Magali">           
+        <div class="nav-items">
+            <ul>
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Nossos trabalhos</a></li>
+                <li><a href="#">Taxa de entrega</a></li>
+                <li><a href="#">Encomende Já!</a></li>
+            </ul>
+        </div>
+    </nav>  
+    <div class="choco">
+        <img src="./img/choco.png">                              
+    </div>    
+    <section class="slide-container">   
+        <div class="slide">
+            <h1>Quem somos</h1>
+            <p>Delícias da Dika nasceu da paixão pela gastronomia e ao longo da nossa história, conquistamos os paladares mais exigentes, com designers exclusivos de Bolos de Festa cheios de personalidade e muito sabor, transformando um simples momento em uma grande festa. Resgatando valores intangíveis e nostálgicos presentes no lugar mais doce da memória de nossos clientes. Delícias da Dika é assim, muito mais que uma casa de bolos, somos parte do sabor de cada momento marcante na vida das pessoas.</p>
+            <p id="slogan">O bolo, quando feito com amor, tem até mais sabor!</p>
+        </div>         
+        <img src="./img/slide.gif" alt="Dika">   
+    </section>
+    <section class="cakes-container">
+        <h1>Nossos trabalhos</h1>
+        <h2>Bolos de 1 andar</h2>
+        <div class="cake-andar">
+            <ul>
+                <li><img class="icon" src="./img/icon-cake.png"></li>
+                <li>15cm</li>
+                <li>12 fatias</li>
+                <li class="price">R$ 135,00 </li>
+                <li class="carrossel">
+                    <div class="container-carrossel" id="imga">
+                        <img src="./cakes/15cm/IMG_5261.jpg">
+                        <img src="./cakes/15cm/IMG_5262.jpg">
+                        <img src="./cakes/15cm/IMG_5263.jpg">
+                        <img src="./cakes/15cm/IMG_5290.PNG.jpg">
+                    </div>
+                </li>
+                <button class="pedir"><a href="#">Encomendar</a></button>
+            </ul>
+            <ul>
+                <li><img class="icon" src="./img/icon-cake.png"></li>
+                <li>20cm</li>
+                <li>22 fatias</li>
+                <li class="price">R$ 180,00 </li>
+                <li class="carrossel">
+                    <div class="container-carrossel" id="imgb">
+                        <img src="./cakes/20cm/IMG_5265.jpg">
+                        <img src="./cakes/20cm/IMG_5277.jpg">
+                        <img src="./cakes/20cm/IMG_5284.jpg">
+                        <img src="./cakes/20cm/IMG_5285.jpg">
+                    </div>
+                </li>
+                <button class="pedir"><a href="#">Encomendar</a></button>
+            </ul>
+            <ul>
+                <li><img class="icon" src="./img/icon-cake.png"></li>
+                <li>25cm</li>
+                <li>35 fatias</li>
+                <li class="price">R$ 200,00 </li>
+                <li class="carrossel">
+                    <div class="container-carrossel" id="imgc">
+                        <img src="./cakes/25cm/IMG_5266.jpg">
+                        <img src="./cakes/25cm/IMG_5267.jpg">
+                        <img src="./cakes/25cm/IMG_5278.jpg">
+                        <img src="./cakes/25cm/IMG_5280.PNG.jpg">
+                    </div>
+                </li>
+                <button class="pedir"><a href="#">Encomendar</a></button>
+            </ul>
+            <ul>
+                <li><img class="icon" src="./img/icon-cake.png"></li>
+                <li>30cm</li>
+                <li>55 fatias</li>
+                <li class="price">R$ 290,00 </li>
+                <li class="carrossel">
+                    <div class="container-carrossel" id="imgd">
+                        <img src="./cakes/30cm/IMG_5281.jpg">
+                        <img src="./cakes/30cm/IMG_5282.jpg">
+                        <img src="./cakes/30cm/IMG_5283.jpg">
+                        <img src="./cakes/30cm/IMG_5286.jpg">
+                    </div>
+                </li>
+                <button class="pedir"><a href="#">Encomendar</a></button>
+            </ul>
+        </div>
+        <h2>Bolos de 2 e 3 andares</h2>
+        <div class="cake-andar">
+            <ul>
+                <li><img class="icon" src="./img/icon-cake.png"></li>
+                <li>12 x 20cm</li>
+                <li>40 fatias</li>
+                <li class="price">R$ 250,00 </li>
+                <li class="carrossel">
+                    <div class="container-carrossel">                
+                        <img src="./cakes/1/IMG_5293.jpg">
+                    </div>
+                </li>
+                <button class="pedir"><a href="#">Encomendar</a></button>
+            </ul>
+            <ul>
+                <li><img class="icon" src="./img/icon-cake.png"></li>
+                <li>15 x 25cm</li>
+                <li>60 fatias</li>
+                <li class="price">R$ 325,00 </li>
+                <li class="carrossel">
+                    <div class="container-carrossel">
+                        <img src="./cakes/2/IMG_5292.jpg">
+                    </div>
+                </li>
+                <button class="pedir"><a href="#">Encomendar</a></button>
+            </ul>
+            <ul>
+                <li><img class="icon" src="./img/icon-cake.png"></li>
+                <li>20 x 30cm</li>
+                <li>80 fatias</li>
+                <li class="price">R$ 450,00 </li>
+                <li class="carrossel">
+                    <div class="container-carrossel">
+                        <img src="./cakes/3/IMG_5296.jpg">
+                    </div>
+                </li>
+                <button class="pedir"><a href="#">Encomendar</a></button>
+            </ul>
+            <ul>
+                <li><img class="icon" src="./img/icon-cake.png"></li>
+                <li>15 x 20 x 30cm</li>
+                <li>100 fatias</li>
+                <li class="price">R$ 600,00 </li>
+                <li class="carrossel">
+                    <div class="container-carrossel">
+                        <img src="./cakes/4/IMG_5300.PNG.jpg.jpg">
+                    </div>
+                </li>
+                <button class="pedir"><a href="#">Encomendar</a></button>
+            </ul>
+        </div>
+    </section>
+    <section class="entrega-container">        
+        <h1>Taxa de Entrega</h1>
+        <p>Fazemos entrega em qualquer lugar da cidade de Manaus!</p>
+        <img class="ent-img" src="./img/entrega.png">   
+        <button>Consulte sua taxa aqui!</button>             
+    </section>
+    <section class="social-news">
+        <h1>Nos acompanhe nas redes sociais:</h1>
+        <div class="social">            
+            <a href="#"><img class="social-img" src="./img/whats.png">  (92) 99334-8593</a>
+            <a href="#"><img class="social-img" src="./img/insta.jfif">  @delicias_dikacakes</a>
+            <a href="#"><img class="social-img" src="./img/fb.png">  Delícias da Dika Cakes</a>
+        </div>
+        <div class="news">
+            <h1>Receba novidades e promoções exclusivas:</h1>
+            <div class="news-1">
+                <input type="text" id="name" placeholder="Nome">
+                <input type="email" id="email" placeholder="E-mail">
+            </div>            
+            <button>Inscreva-se</button>            
+        </div>    
+    </section>
+    <footer>   
+        <p id="copyright">&copy;2023 Delícias da DicaCakes</p>
+    </footer>
+    
+    
 
-        </section>
-            <!-- Tamanhos e valores -->
-            <section class="categories-container">
-                <p>Conheça nossos tamanhos:</p>
-                <div class="cat-container">
-                <div class="cat">
-                    <ul>
-                        <li class="size">15cm</li>
-                        <li class="slice">Serve 8/12 Fatias</li>
-                        <li class="price">R$ 135,00</li>
-                    </ul>
-                </div>
-                    <div class="cat">
-                        <ul>
-                            <li class="size">20cm</li>
-                            <li class="slice">Serve 20/22 Fatias</li>
-                            <li class="price">R$ 180,00</li>
-                        </ul>
-                    </div>
-                    <div class="cat">
-                        <ul>
-                            <li class="size">25cm</li>
-                            <li class="slice">Serve 30/35 Fatias</li>
-                            <li class="price">R$ 200,00</li>
-                        </ul>
-                    </div>
-                    <div class="cat">
-                        <ul>
-                            <li class="size">30cm</li>
-                            <li class="slice">Serve 50/55 Fatias</li>
-                            <li class="price">R$ 290,00</li>
-                        </ul>
-                    </div>
-                </div>                
-            </section>
-            <!-- Newsletter -->
-            <section class="news-container">
-                <h2>Receba nossas novidades e promoções:</h2>
-                <form>
-                    <input type="e-mail" 
-                    name="news"
-                    id="news"
-                    placeholder="Digite seu e-mail"
-                    >
-                    <input type="submit" name="news" value="Receber novidades" #btn_enviar>
-                </form> 
-            </section>
-        </main>
-        <!-- Informações estabelecimento -->
-        <div class="info-container">
-                <ul>
-                    <li>
-                        <h3>Nossos Endereços:</h3>
-                        <h4>Unidade Dom Pedro</h4>
-                        <p>Av. Jacira Reis, 213</p>
-                        <p>(92) 3071-8359</p>
-                        <h4>Unidade Torres</h4>
-                        <p>Av. Gov. José Lindoso, 54</p>
-                        <p>(92) 4079-8765</p>
-                        <h4>Unidade Parque Dez</h4>
-                        <p>Av. Tancredo Neves, 950</p>
-                        <p>(92) 2453-9865</p>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <h3>Horário de Funcionamento:</h3>
-                        <p>Segunda a Sexta: 10:00 às 19:00</p>
-                        <p>Sábado: 09:30 às 18:00</p>
-                        <p>Domingos e Feriados: 09:00 às 14:00</p>
-                    </li>
-                </ul>
-                <ul>
-                    <li #pagamento>
-                        <h3>Formas de Pagamento:</h3>                    
-                    </li>
-                    <li #pagamento>
-                        <img src="./img/visto (1).png" alt="Bandeira Visa" class="icones-pagamento">
-                    </li>
-                    <li #pagamento>
-                        <img src="./img/cartao (1).png" alt="Bandeira Mastercard"class="icones-pagamento">
-                    </li >
-                    <li #pagamento>
-                        <img src="./img/pixeis (1).png" alt="Pagamento Pix"class="icones-pagamento">
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <h3>Redes Sociais:</h3>                    
-                    </li> 
-                    <li>
-                        <a href="#">
-                        <img src="./img/facebook.png" alt="logo facebook" class="logo-redes">
-                        </a>
-                    </li>   
-                    <li>
-                        <a href="#">
-                        <img src="img/instagram.png" alt="logo instagram"class="logo-redes">
-                        </a>
-                    </li>            
-                </ul>
-            </div>  
-        
-        <footer>
-            <p>Direitos Autorais © Delícias da Dika</p>
-        </footer>
-          
+
+    
+
+
+  
 </body>
 </html>

@@ -4,8 +4,8 @@ let num = Number(prompt(`Digite um número:`))
 
 function imprimeNumeros(n1){
     for(i = 0; i <= n1; i++){
-        console.log(i)
+        console.log (i)        
     }
 }
 
-console.log(imprimeNumeros(num))
+console.log(imprimeNumeros(100))
