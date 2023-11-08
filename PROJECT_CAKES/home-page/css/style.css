@@ -65,6 +65,13 @@ h2{
     white-space: nowrap;
 }
 
+.nav-items a:hover{
+    color: #fcecdc;
+    font-size: 1.05rem;
+    transition: 1s;
+    
+}
+
 .choco{   
     display: flex;
     height: 5rem;
@@ -108,10 +115,19 @@ h2{
     width: auto;
 }
 
+.whats img{
+    position: fixed;
+    z-index: 1;
+    height: 5rem;
+    width: auto;
+    bottom: 2rem;
+    right: 2rem;
+}
+
 .cakes-container{
     padding: 9rem 2rem 2rem 2rem;
     background-color: #fcecdc;
-    height:80;
+    height:84rem;    
 }
 
 .cake-andar{
@@ -134,6 +150,7 @@ h2{
     border-right: 2px solid #4a2626;
     border-radius: 1rem;
     list-style: none;
+    padding-bottom: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -141,19 +158,20 @@ h2{
     font-size: 1.2rem;
 }
 
-.cake-andar ul button{
+.cake-andar ul a{
     background-color: #4a2626;
-    padding: 0.5rem;    
-    width: 12rem;
-    cursor: pointer;
+    padding: 0.5rem 2rem;    
     border-radius: 1rem;
-}
-
-.cake-andar ul button a{
     color: #fff;
     font-size: 1rem;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.cake-andar ul a:hover{
+    background-color: #fc7473;
+    color: #111;
+    transition: 1s;
 }
 
 .carrossel{
@@ -163,6 +181,7 @@ h2{
     border-radius: 1rem;
     margin: 1rem auto;
     border: 4px solid #4a2626;    
+    margin-bottom: 2rem;
 }
 
 .container-carrossel{
@@ -179,7 +198,7 @@ h2{
 
 .entrega-container{
     padding: 9rem 2rem 2rem 2rem;
-    background-color: #fc7473;
+    background-color: #fcecdc;
     height: 38rem;
     text-align: center;
 }
@@ -189,7 +208,7 @@ h2{
     margin-bottom: 2rem;
 }
 
-.entrega-container button{
+button{
     background-color: #4a2626;
     padding: 0.5rem;    
     width: 15rem;
@@ -200,6 +219,13 @@ h2{
     color: #fff;
     font-size: 1rem;
     text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+button:hover{
+    background-color: #fc7473;
+    color: #111;
+    transition: 1s;
 }
 
 .ent-img{
@@ -262,20 +288,147 @@ footer{
     width: 40rem;
 }
 
-.news button{
-    background-color: #4a2626;
-    padding: 0.5rem;    
-    width: 15rem;
-    cursor: pointer;
-    border-radius: 1rem;
-    margin-bottom: 2rem;
-    cursor: pointer;
-    color: #fff;
-    font-size: 1rem;
-    text-transform: uppercase;
-    margin-top: 2rem;
-
+#content{
+    display: none;
 }
+
+#loading{
+    position: absolute;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fcecdc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.load-logo{
+    height: 20rem;
+    width: auto;
+}
+
+.load-bar{
+    margin-top: 1rem;
+    height: 2rem;
+    width: auto;
+}
+
+/*FORMULÁRIO*/
+
+h3{
+    color: #4a2626;
+    border-radius: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #fff; 
+}
+
+.container-form{  
+    background-color: #fcecdc;
+    height: 73rem;
+    padding: 9rem 2rem 2rem 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;   
+    text-align: center;
+    align-items: center;
+}
+
+form input{
+    border-radius: 1rem;
+    border: none;
+    background-color: #fff;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #111;
+}
+
+.cake-container{
+    width: 50rem;
+    padding: 1rem 1.5rem;
+}
+
+.name{
+    width: 40rem;
+}
+
+.number{
+    width: 10rem;
+}
+
+.email{
+    width: 25rem;
+}
+
+#recheio{
+    width: 16rem;
+    padding: 5px;
+}
+
+.size-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.andar-container input,
+.andar-container label{
+    display: inline-block;
+}
+
+#andar{
+    width: 5rem;
+    padding: 5px;
+}
+
+.sug{
+    width: 30rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sug-img{
+    width: 20rem;
+}
+
+.data{
+    width: 10rem;
+}
+
+.hora{
+    width: 10rem;
+}
+
+.endereco{
+    display: inline;
+    width: 25rem;
+}
+
+.n{
+    width: 5rem;
+}
+
+.cep{
+    width: 10rem;
+}
+
+textarea{
+    width: 45rem;
+    height: 10rem;
+    border-radius: 1rem;
+}
+
+::placeholder{
+    padding: 10px;
+}
+
+
 
 
 
