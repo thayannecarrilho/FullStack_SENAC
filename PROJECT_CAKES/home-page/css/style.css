@@ -30,14 +30,19 @@ h2{
     border-top: 5px solid #fc7473;
 }
 
-.nav-container{
+header{
     display: flex;
     background-color: #4a2626;
-    width: 100%;
-    height: 4rem;
+    width: 100%;    
     align-items: center;
     position: fixed;
     z-index: 1;
+}
+
+.nav-container{
+    display: flex;
+    height: 4rem;
+    align-items: center;    
 }
 
 .logo{
@@ -75,7 +80,16 @@ h2{
 .choco{   
     display: flex;
     height: 5rem;
-    top: 4rem;
+    top: 3.8rem;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.choco-resp{
+    display: none;
+    height: 5rem;
+    top: 3.8rem;
     width: 100%;
     position: fixed;
     z-index: 1;
@@ -428,12 +442,167 @@ textarea{
     padding: 10px;
 }
 
+/*Responsividade*/
 
+.sandbar-container{
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.5rem;  
+    margin-top: 0.5rem;  
+    align-items: center;
+}
+.sandbar{    
+    height: 2.5rem;
+    width: auto;
+    display: none;
+    cursor: pointer;
+}
 
+@media (max-width:768px){
+    header{
+        background-color: #4a2626;
+        z-index: 2;
+    }
+    .choco{
+        display: none;
+    }
+    .choco-resp{
+        display: block;
+        z-index: 2;
+    }
+    .slide-container{
+        padding-left: 2rem;
+        padding-right: 2rem;      
+        gap: 2rem;
+        align-items: center;
+    }
+    h1{
+        padding: 0;
+        font-size: 2rem;        
+    }
+    .slide p{
+        font-size: 1.1rem;
+        font-weight: none;
+    }    
+    #slogan{
+        font-size: 1.5rem;
+    }    
+    .slide-container img{    
+        height: 25rem;
+        width: auto;
+        padding-top: 6rem;
+    }
+    .slide{
+        padding-top: 4rem;
+    }
+    .cake-andar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .cakes-container{
+        height: 150rem;
+    }
+    .entrega-container{
+        height: 45rem;
+    }
+    .social-news{
+        height: 45rem;
+    }        
+    .social{
+        gap: 1rem;
+    }
+    .social a{
+        font-size: 1rem;
+    } 
+    .sandbar{   
+        display: block;
+    }
+    .nav-items{
+        position: absolute;
+        display: none;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: rgba(225, 91, 91, 0.5);
+        transition: 1s ease;
+        text-align: center;
+        padding-top: 3rem;
+    }
+    .nav-items.active{
+        display: block;
+    }
+    .nav-items ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        align-items: center;
+        gap: 1rem;
+    }
+}
 
-
-
-
+@media (max-width:390px){
+    .slide-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    h1{
+        font-size: 1.5rem;        
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .slide p{
+        font-size: 0.9rem;
+    }    
+    #slogan{
+        font-size: 1rem;
+    }    
+    .slide-container{
+        height: 50rem;
+    }
+    .slide-container img{
+        height: 27rem;            
+        order: 1;
+        padding-top: 7rem;
+    }
+    .slide{
+        padding-top: 0;
+        order: 2;
+    }
+    .cake-andar{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .cakes-container{
+        height: 267rem;
+        padding-top: 7rem;
+    }
+    .entrega-container{
+        height: 35rem;
+        padding-top: 7rem;
+    }
+    .entrega-container p{
+        font-size: 1.5rem;
+    }
+    .social-news{
+        height: 52rem;
+        padding-top: 7rem;
+    }        
+    .social{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .social a{
+        font-size: 1rem;
+        padding: 0.5rem 0;
+    } 
+    .news{
+        padding-top: 5rem;
+    }
+    .nav-items{
+       padding-top: 1rem;
+    }      
+}
 
 
 
