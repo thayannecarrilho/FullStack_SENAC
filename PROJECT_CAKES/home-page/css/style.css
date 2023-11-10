@@ -365,7 +365,7 @@ form input{
 
 .cake-container{
     width: 50rem;
-    padding: 1rem 1.5rem;
+    padding-top: 2rem;
 }
 
 .name{
@@ -386,8 +386,10 @@ form input{
 }
 
 .size-container{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+   
 }
 
 .andar-container input,
@@ -538,7 +540,29 @@ textarea{
         align-items: center;
         gap: 1rem;
     }
+    .name{
+        width: 30rem;
+    }
+    .email{
+        width: 15rem;
+    }
+    #recheio{
+        width: 5rem;
+    }
+    .row{
+        display: block;
+    }
+    .endereco{
+        width: 15rem;
+    }
+    .cep{
+        width: 7rem;
+    }
+    textarea{
+        width: 30rem;
+    }
 }
+
 
 @media (max-width:390px){
     .slide-container{
@@ -601,7 +625,48 @@ textarea{
     }
     .nav-items{
        padding-top: 1rem;
-    }      
+    }     
+    .name{
+        width: 19rem;
+    }
+    .number{
+        width: 7rem;
+    }
+    .email{
+        width: 7rem;
+    }
+    .size-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .sug{
+        width: 15rem;
+    }    
+    .sug-img{
+        width: 10rem;
+    }    
+    .data{
+        width: 7rem;
+    }    
+    .hora{
+        width: 7rem;
+    }    
+    .endereco{
+        width: 10rem;
+    }    
+    .n{
+        width: 3rem;
+    }    
+    .cep{
+        width: 5rem;
+    }    
+    textarea{
+        width: 19rem;
+        height: 5rem;
+    }
+    .container-form{
+        height: 80rem;
+    }    
 }
 
 

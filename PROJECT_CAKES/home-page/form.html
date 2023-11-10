@@ -17,7 +17,10 @@
     </header>  
     <div class="choco">
         <img src="./img/choco.png">                              
-    </div>    
+    </div>   
+    <div class="choco-resp">
+        <img src="./img/choco.responsive.png">
+    </div> 
     <div class="container-form">
         <h1>Encomende Aqui!</h1>
         <form>
@@ -25,10 +28,12 @@
                 <h3>Dados Pessoais</h3>
                 <label for="name">Nome:</label>
                 <input type="text" name="name" class="name">
-                <label for="contato">Telefone:</label>
-                <input type="number" class="number" name="contato" placeholder="(DDD) XXXXX-XXXX">
-                <label for="email">E-mail:</label>
-                <input type="email" class="email" name="email">
+                <div class="row">
+                    <label for="contato">Telefone:</label>
+                    <input type="number" class="number" name="contato" placeholder="(DDD) XXXXX-XXXX">
+                    <label for="email">E-mail:</label>
+                    <input type="email" class="email" name="email">
+                </div>
             </div>
             <div class="cake-container">
                 <h3>Escolha 1 ou 2 recheios</h3>
@@ -108,11 +113,13 @@
                     <input type="date" name="data" class="data">
                     <label for="hora">Hora:</label>
                     <input type="time" name="hora" class="hora">
-                    <input type="text" placeholder="Logradouro" class="endereco">
-                    <label for="number">Nº:</label>
-                    <input type="text" name="number" class="n">
-                    <label for="cep">CEP:</label>
-                    <input type="text" name="cep" class="cep">
+                    <div class="row">
+                        <input type="text" placeholder="Logradouro" class="endereco">
+                        <label for="number">Nº:</label>
+                        <input type="text" name="number" class="n">
+                        <label for="cep">CEP:</label>
+                        <input type="text" name="cep" class="cep">
+                    </div>
                 </div>
                 <div class="cake-container">
                     <h3>Observações</h3>
