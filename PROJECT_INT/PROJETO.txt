@@ -1,0 +1,64 @@
+Sistema Master (Bar)
+
+- HOME PAGE 
+
+	BARRA DE NAVEGAÇÃO
+	- Home
+	- Contrate nossos serviços para o seu condominio
+	- Acompanhe sua comanda (Com número de celular para controle)
+	- Login (equipe interna com layout de todas as comandas)
+	OBS.: Link do Whatsapp (Faça seu pedido aqui) todas as paginas
+
+	APRESENTAÇÃO DA EMPRESA
+	- Sobre a Dona 
+	- Fotos de eventos
+	- ...
+	
+	RESERVA DE EVENTOS
+	- Formulário Nome, contato, Data, Horário, quant de horas, Local, quant de pessoas, Tipos de serviços(Alimentação, serviços, bar)
+	
+
+
+
+- ACOMPANHE SUA COMANDA (CLIENTE)
+	- Botão - Abre uma janela com numero de celular (Digite)
+	- Pendencias (data, horário sistema automatico) Valor 
+	- Histórico de compras e pagamentos 
+
+- LOGIN EQUIPE
+	- Aba de cadastro de produtos (Produto, valor, quant de estoque)
+	- Aba das comandas (blocos [aptos])
+	- Tabela ou gráfico (resumo de comandas pendentes) 
+	- Disparar mensagens por whatsapp de pendencias
+	- Aba de cadastro de usuários (atrelar apto ao celular)
+
+- CONTRATE NOSSOS SERVIÇOS
+	Formulário...
+
+
+REQUISITOS FUNCIONAIS
+BANCO DE DADOS
+- Comanda
+- Estoque
+- cadastro de usuário
+- API ligação whatsapp
+
+
+REQUISITOS NÃO-FUNCONAIS
+Tipo de sistema
+Conexao
+banco de dados
+tipos de lugares que o software sera utilizado
+Segurança de dados
+Facilidade de uso
+Qualidade do sistema
+ 
+
+	
+
+
+
+
+	
+	
+
