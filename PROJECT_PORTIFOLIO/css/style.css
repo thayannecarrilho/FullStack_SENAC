@@ -28,7 +28,7 @@ body.active{
     transition: 2s;
     .logo-dark{
         display: block;
-        transition: 2s;
+        transition: 5s;
     }
     .logo-light{
         display: none;
@@ -92,10 +92,12 @@ header.shadow{
 
 .logo img{
     height: 4rem;
+    transition: 2s;
 }
 
 .logo-dark{
     display: none;
+    transition: 2s;
 }
 
 
@@ -484,55 +486,101 @@ form textarea{
         top: 1.4rem;
         right: 2rem;
     }
+    .home{
+        padding-right: 4rem;
+    }
     .scroll-down{
         display: none;
-    }
+    }    
     .home-img{
         order: initial;
     }
-
     .about-container{
         grid-template-columns: 1fr;
     }
     .about-img{
         display: flex;
         justify-content: center;
-    }   
-
-    
+    }       
     .skills-container {
         grid-template-columns: 1fr;
     }
-
     .skills-img img{
         padding-left: 0;
     }
-
     .skills-img {
         padding-top: 2rem;
         display: flex;
         justify-content: center;
         border-radius: 50px;
     }
-
-    .contact-form form{
-        width: 300px;
+    section{
+        padding: 0;
+        margin: 0 2rem;
+        align-items: center;
     }
-    .contact-button{
-        margin-left: 25%;
-    }
+    .contact{
+        padding-top: 4rem;
+    }    
+    .services-content{
+        margin-right: 3rem;
+    }  
 }
-@media (max-width:340px){
+
+@media (max-width:390px){
     :root{
         --big-font: 1.7rem;
         --medium-font: 1.1rem;
+    }   
+    .home{
+        padding: 0;
+        margin: 3rem;
+        grid-template-columns: 1fr;
+        gap: 0; 
+        justify-content: center;  
+        order: 1;     
     }
-    .home-text span{
-        font-size: 1rem;
+    .about,
+    .skills,
+    .services{
+        margin-top: 2rem;
+        padding: 0;
+    }
+    .about-text{
+        padding: 0 2rem;
+    }
+    .social{
+        padding: 0;
+        padding-left: 3rem;
+        align-items: center;
+        gap: 2rem;
+        justify-content: initial;
+        flex-direction: row;
+        order: 2;        
+    }
+    .social a{
+        height: 1rem;
+    }
+    .home-text{
+        padding-right: 6rem;
+        order: 3;
+    }
+    .home img{
+        padding-top: 2rem;
+        margin: auto 0;
+        width: 19rem;
+        right: 3rem;
     }
     .home-text h2{
         font-size: 0.9rem;
         font-weight: 500;
+    }
+    .skills{
+        padding: 2rem;
+    }
+    .skills img{
+        padding: 0;
+        margin: 0;
     }
     .information .info-box span{
         
@@ -542,10 +590,14 @@ form textarea{
         
         width: 300px;
     }
-
     .contact-button{
         
         margin-left: 25%;
+    }
+    
+    .services-content{
+        grid-template-columns: 1fr;
+        padding-left: 2.7rem;
     }
 }
 
